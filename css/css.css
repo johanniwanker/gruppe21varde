@@ -67,11 +67,12 @@ a:hover{
 }
 .menu:hover{
     border-bottom: 10px solid #cd9508;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 .current{
     border-bottom: 10px solid #cd9508;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+    color: #cd9508;
 }
 
 /* Skrift farve */
@@ -131,8 +132,13 @@ a:hover{
 /* Padding */
 
 /* Header */
+header{
+    height: 100px;
+}
 .logo{
-    height: 80px;
+    height: 90px;
+    float:none;
+    margin-top: -15px;
 }
 
 /* Footer */
