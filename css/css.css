@@ -1,0 +1,142 @@
+body{
+    background-color: #e0ecf7;
+    overflow-y: scroll;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+section{
+    flex: 1;
+    display: flex;
+}
+.content{
+    width: 60%;
+    margin: auto;
+    background-color: red;
+}
+.ninety{
+    width: 80%;
+    margin: auto;
+}
+
+/* Fonts */
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Raleway;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+h4{
+    font-size: 18px;
+    font-family: Roboto;
+}
+h5{
+    font-size: 16px;
+    font-family: Roboto;
+}
+h6{
+    font-size: 12px;
+    font-family: Roboto;
+}
+p{
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+/* Font style */
+.bold{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #cd9508;
+}
+.menu:hover{
+    border-bottom: 10px solid #cd9508;
+    padding-bottom: 20px;
+}
+.current{
+    border-bottom: 10px solid #cd9508;
+    padding-bottom: 20px;
+}
+
+/* Skrift farve */
+.font-blue{
+    color: #103474;
+}
+.font-gold{
+    color: #cd9508;
+}
+.font-white{
+    color: #e0ecf7;
+}
+
+/* Baggrunde */
+.bg-blue{
+    background-color: #103474;
+}
+.bg-gold{
+    background-color: #cd9508;
+}
+.bg-white{
+    background-color: #e0ecf7;
+}
+
+/* Flex */
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.space{
+    justify-content: space-between;
+}
+.left{
+    justify-content: flex-start;
+}
+.center{
+    justify-content: center;
+}
+.right{
+    justify-content: flex-end;
+}
+.middle{
+    align-items: center;
+}
+
+/* Margin */
+.margin-l-10{
+    margin-left: 10px;
+}
+.margin-t-10{
+    margin-top: 10px;
+}
+
+/* Padding */
+
+/* Header */
+.logo{
+    height: 80px;
+}
+
+/* Footer */
+footer{
+    height: 100px;
+    width: 100%;
+}
