@@ -55,7 +55,7 @@ p{
 
 /* Font style */
 .bold{
-    font-weight: bold;
+    font-weight: 500;
 }
 a{
     text-decoration: none;
