@@ -150,6 +150,10 @@ a:hover{
     margin-top: 10px;
 }
 
+.margin-t-20{
+    margin-top: 20px;
+}
+
 /* Padding */
 .padbot {
   padding-bottom: 50px;
@@ -163,6 +167,10 @@ a:hover{
 }
 .padpres {
   padding-bottom: 2%;
+}
+.padprog {
+padding: 2%;
+
 }
 
 /* Header */
@@ -227,8 +235,8 @@ width: 25%;
 .event-box{
 flex-direction: column;
 justify-content: flex-start;
-background-color: blue;
-padding:5px;
+box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+
 }
 
 .talebobbel {
