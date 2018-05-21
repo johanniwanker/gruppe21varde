@@ -14,10 +14,14 @@ section{
 .content{
     width: 60%;
     margin: auto;
+    padding-bottom: 10px;
 }
 .eighty{
     width: 80%;
     margin: auto;
+}
+.column{
+    width: 49%;
 }
 
 /* Fonts */
@@ -157,4 +161,9 @@ footer{
 .some-logo{
     width: 35px;
     height: 100%;
+}
+
+/* Praktisk info */
+.kort{
+    width: 100%;
 }
