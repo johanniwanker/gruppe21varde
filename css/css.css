@@ -205,3 +205,10 @@ footer{
   width: 100%;
   height: 1000px;
 }
+
+.logowidth {
+  width:113px;
+}
+.top {
+  top: 0;
+}
