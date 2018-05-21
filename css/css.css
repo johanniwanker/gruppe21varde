@@ -79,14 +79,6 @@ a:hover{
     color: #cd9508;
 }
 
-.padoverskrift {
-    padding: 50px 0 50px 0;
-}
-
-.padtekst {
-    padding: 0 0 8px 0;
-}
-
 /* Skrift farve */
 .font-blue{
     color: #010736;
@@ -151,6 +143,15 @@ a:hover{
 .padbot {
   padding-bottom: 50px;
 }
+.padoverskrift {
+    padding: 50px 0 50px 0;
+}
+
+.padtekst {
+    padding: 0 0 8px 0;
+}
+
+
 /* Header */
 header{
     height: 100px;
