@@ -214,3 +214,19 @@ footer{
 .logowidth {
   width:113px;
 }
+
+/*Program*/
+.width-100 {
+width: 100%;
+}
+
+.width-25 {
+width: 25%;
+}
+
+.event-box{
+flex-direction: column;
+justify-content: flex-start;
+background-color: blue;
+padding:5px;  
+}
