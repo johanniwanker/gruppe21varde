@@ -154,7 +154,8 @@ a:hover{
 
 /* Header */
 header{
-    height: 100px;
+    height: 101px;
+    z-index: 25;
 }
 .logo{
     height: 90px;
@@ -166,6 +167,7 @@ header{
 footer{
     height: 100px;
     width: 100%;
+    z-index: 25;
 }
 .some{
     width: 100px;
