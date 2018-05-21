@@ -112,6 +112,10 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .space{
     justify-content: space-between;
 }
@@ -188,3 +192,11 @@ footer{
 }
 .imgpadleft {
     padding-left: 10px;
+  }
+
+/* Kampagne */
+.kambag {
+  display: flex;
+  background-image: url(../img/johan.jpg);
+  width: 100%;
+}
