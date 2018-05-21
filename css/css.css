@@ -51,6 +51,7 @@ h6{
 p{
     font-size: 16px;
     font-family: Roboto;
+    line-height: normal;
 }
 
 /* Font style */
@@ -72,6 +73,14 @@ a:hover{
     border-bottom: 10px solid #cd9508;
     padding-bottom: 18px;
     color: #cd9508;
+}
+
+.padoverskrift {
+    padding: 50px 0 50px 0;
+}
+
+.padtekst {
+    padding: 0 0 8px 0;
 }
 
 /* Skrift farve */
@@ -135,7 +144,9 @@ a:hover{
 }
 
 /* Padding */
-
+.padbot {
+  padding-bottom: 50px;
+}
 /* Header */
 header{
     height: 100px;
@@ -157,4 +168,12 @@ footer{
 .some-logo{
     width: 35px;
     height: 100%;
+}
+
+/* Images */
+.imgheight {
+    height: 100%;
+}
+.imgpadleft {
+    padding-left: 10px;
 }
