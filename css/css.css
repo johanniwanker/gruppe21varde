@@ -89,7 +89,9 @@ a:hover{
 .font-white{
     color: #fff;
 }
-
+.prsmed {
+  color: black;
+}
 /* Baggrunde */
 .bg-blue{
     background-color: #010736;
@@ -131,7 +133,9 @@ a:hover{
 .middle{
     align-items: center;
 }
-
+.flex-2 {
+    flex: 2;
+}
 /* Margin */
 .margin-l-10{
     margin-left: 10px;
