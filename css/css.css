@@ -92,6 +92,9 @@ a:hover{
 .prsmed {
   color: black;
 }
+.lineheigt {
+  line-height:normal;
+}
 /* Baggrunde */
 .bg-blue{
     background-color: #010736;
@@ -158,7 +161,9 @@ a:hover{
 .padtekst {
     padding: 3% 0 1% 0;
 }
-
+.padpres {
+  padding-bottom: 2%;
+}
 
 /* Header */
 header{
@@ -208,7 +213,4 @@ footer{
 
 .logowidth {
   width:113px;
-}
-.top {
-  top: 0;
 }
