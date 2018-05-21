@@ -228,5 +228,10 @@ width: 25%;
 flex-direction: column;
 justify-content: flex-start;
 background-color: blue;
-padding:5px;  
+padding:5px;
+}
+
+.talebobbel {
+  width: 750px;
+  height: 500px;
 }
