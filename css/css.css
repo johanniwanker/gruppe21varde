@@ -14,10 +14,14 @@ section{
 .content{
     width: 60%;
     margin: auto;
+    padding-bottom: 10px;
 }
 .eighty{
     width: 80%;
     margin: auto;
+}
+.column{
+    width: 49%;
 }
 
 /* Fonts */
@@ -170,10 +174,14 @@ footer{
     height: 100%;
 }
 
+/* Praktisk info */
+.kort{
+    width: 100%;
+}
+
 /* Images */
 .imgheight {
     height: 100%;
 }
 .imgpadleft {
     padding-left: 10px;
-}
