@@ -276,5 +276,14 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
 }
 
 .kommentarer::-webkit-input-placeholder{
-  
+
+}
+
+/*Kontakt*/
+.send {
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: none;
 }
