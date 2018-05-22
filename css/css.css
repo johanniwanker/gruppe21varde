@@ -259,6 +259,8 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   width: 100%;
   height: 25px;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .enavn, .email, .gæster, .ankomst, .afrejse {
@@ -266,6 +268,8 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   height: 25px;
   margin-top: 10px;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .kommentarer{
@@ -273,10 +277,13 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   margin-top: 10px;
   height: 150px;
   border-radius: 4px;
+  resize: none;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .kommentarer::-webkit-input-placeholder{
-  
+
 }
 
 /*Kontakt*/
@@ -286,4 +293,7 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   height: 30px;
   width: 60px;
   border: none;
+  float: right;
+  font-size: 16px;
+  font-family: Roboto;
 }
