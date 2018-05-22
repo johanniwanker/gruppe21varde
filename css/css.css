@@ -235,8 +235,8 @@ footer{
 }
 .talebobbel {
   position: absolute;
-  width: 50%;
-  height: 60%;
+  width: 35%;
+  height: 50%;
   left: 0;
   background-image: url(../img/talebobbel.png);
   background-size: contain;
@@ -244,18 +244,21 @@ footer{
 .talebobbel2 {
   position: absolute;
   right:0;
-  width: 50%;
-  height: 60%;
+  width: 35%;
+  height: 50%;
   background-image: url(../img/talebobbel2.png);
   background-size: contain;
 }
 .km1 {
-  top: 50%;
+  position:absolute;
+  top: 45%;
   left: 25%;
 }
 .km2 {
-  top: 50%;
-  right: 30%;
+  position: relative;
+  top: 40%;
+  right: -30%;
+  text-align: center;
 }
 /*Program*/
 
@@ -340,4 +343,12 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   border: none;
   font-size: 16px;
   font-family: Roboto;
+}
+
+@media screen and (max-width: 1366px) {
+  .km1 {
+    position:absolute;
+    top: 45%;
+    left: 25%;
+  }
 }
