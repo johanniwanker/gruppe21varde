@@ -180,7 +180,10 @@ a:hover{
 }
 .padprog {
 padding: 3%;
+}
 
+.padding-left {
+padding-left: 10px;
 }
 
 /* Header */
@@ -270,10 +273,15 @@ width: 100%;
 .width-25 {
 width: 25%;
 }
-.event-box{
+.width-33 {
+width: 33%;
+}
+.kalender-box{
 flex-direction: column;
 justify-content: flex-start;
 box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+cursor: pointer;
+
 }
 
 /*Booking*/
@@ -346,21 +354,34 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
 }
 /*Modal*/
 .modal {
-display: none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: rgba(0,0,0,0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
 }
-.modal-boks{
-margin-top: 100px;
-background-color: white;
-padding:10px;
-margin: auto;
-width: 80%;
+  .modal-boks{
+  margin-top: 100px;
+  background-color: white;
+  padding:10px;
+  margin: auto;
+  width: 40%;
+}
+.luk {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk:hover,
+.luk:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
