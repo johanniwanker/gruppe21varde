@@ -358,7 +358,7 @@ cursor: pointer;
   margin: 0 20px 40px 20px;
 }
 /*Modal*/
-.modal {
+.modal1 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -369,6 +369,53 @@ cursor: pointer;
   background-color: rgba(0,0,0,0.9);
   padding-top: 250px;
 }
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
+}
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
+}
+.modal4 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
+}
+.modal5 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
+}
+
+
+
   .modal-boks{
   margin-top: 100px;
   background-color: white;
@@ -376,14 +423,62 @@ cursor: pointer;
   margin: auto;
   width: 40%;
 }
-.luk {
+.luk1 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-.luk:hover,
-.luk:focus {
+.luk1:hover,
+.luk1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.luk2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk2:hover,
+.luk2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.luk3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk3:hover,
+.luk3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.luk4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk4:hover,
+.luk4:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.luk5 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk5:hover,
+.luk5:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
