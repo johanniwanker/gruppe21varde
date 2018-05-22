@@ -7,8 +7,9 @@
         <link href="css/css.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:400,500" rel="stylesheet">
         <link rel="icon" type="image/png" href="img/favicon.png">
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     </head>
-    <body>
+    <body onload="initMap()">
         <header class="bg-blue">
             <div class="eighty">
                 <div class="flex right margin-t-10">
@@ -47,7 +48,8 @@
                         <h5>Der er masser af toiletter placeret i nærheden af de forskellige hovedpunkter for festivalen. Der vil være markeret med skilte rundt omkring på pladsen.</h5>
                     </div>
                     <div class="column">
-                        <img class="kort" src="img/kort.jpg">
+                      <div id="mapDiv">
+                      </div>
                         <h5 class="bold margin-t-10">Parkering</h5>
                         <h5>Der er gode parkeringsmuligheder i Varde by, i forhold til de forskellige aktiviteter.</h5>
                         <h5 class="margin-t-10">Nærmeste p-plads i forhold til Sct. Nikolaj Kirkeplads er Fogtmannsplads og Murtfeldsplads. Disse ligger indenfor en radius af 150 meter.</h5>
@@ -81,5 +83,7 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="js/javascript.js"></script>
+
     </body>
 </html>

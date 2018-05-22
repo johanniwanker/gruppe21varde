@@ -482,6 +482,8 @@ cursor: pointer;
     cursor: pointer;
 }
 
+#mapDiv { width: 350px; height: 300px; }
+
 
 @media screen and (max-width: 1366px) {
   .km1 {
