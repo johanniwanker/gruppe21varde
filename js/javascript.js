@@ -1,16 +1,14 @@
-var modal = document.getElementById('modalProg');
+var modal = document.querySelector(".modal");
+var visModal = document.querySelectorAll(".event");
+var lukModal = document.querySelector(".luk");
 
-var div = document.getElementById("event");
+visModal[0].addEventListener("click", function(event){
+    modal.style.display = "block";
+});
 
-var span = document.getElementsByClassName("luk")[0];
-
-div.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
+lukModal.addEventListener("click", function(event){
+    modal.style.display = "none";
+});
 
 window.onclick = function(event) {
   if (event.target == modal) {
