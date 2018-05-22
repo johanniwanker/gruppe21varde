@@ -25,11 +25,23 @@ lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
 });
 
-window.onclick = function(event) {
+document.onclick = function(event) {
     if (event.target == modal1) {
         modal1.style.display = "none";
     }
-}
+    else if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    else if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+    else if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+    else if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+};
 
 
 for(var i=0;i<visModalMikkel.length;i++){
@@ -39,11 +51,7 @@ visModalMikkel[i].addEventListener("click", function(event){
 lukModal2.addEventListener("click", function(event){
     modal2.style.display = "none";
 });
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
+
 
 
 for(var i=0;i<visModalSmed.length;i++){
@@ -53,11 +61,25 @@ visModalSmed[i].addEventListener("click", function(event){
 lukModal3.addEventListener("click", function(event){
     modal3.style.display = "none";
 });
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
+
+for(var i=0;i<visModalHonning.length;i++){
+visModalHonning[i].addEventListener("click", function(event){
+    modal4.style.display = "block";
+})};
+
+lukModal4.addEventListener("click", function(event){
+    modal4.style.display = "none";
+});
+
+
+for(var i=0;i<visModalGarn.length;i++){
+visModalGarn[i].addEventListener("click", function(event){
+    modal5.style.display = "block";
+})};
+lukModal5.addEventListener("click", function(event){
+    modal5.style.display = "none";
+});
 
 
 /*Kortet*/
@@ -262,22 +284,3 @@ function initMap() {
     icon: 'img/toilet.png'
   });
 }
-
-
-for(var i=0;i<visModalHonning.length;i++){
-visModalHonning[i].addEventListener("click", function(event){
-    modal4.style.display = "block";
-})};
-
-lukModal4.addEventListener("click", function(event){
-    modal4.style.display = "none";
-});
-
-
-for(var i=0;i<visModalGarn.length;i++){
-visModalGarn[i].addEventListener("click", function(event){
-    modal5.style.display = "block";
-})};
-lukModal5.addEventListener("click", function(event){
-    modal5.style.display = "none";
-});
