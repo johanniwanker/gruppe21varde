@@ -180,7 +180,6 @@ a:hover{
 }
 .padprog {
 padding: 3%;
-
 }
 
 /* Header */
@@ -220,6 +219,8 @@ footer{
 .imgpadleft {
     padding-left: 10px;
   }
+/* Presse */
+
 
 /* Kampagne */
 .kambag {
@@ -230,7 +231,8 @@ footer{
   height: 1000px;
 }
 .logowidth {
-  width:113px;
+  width:25%;
+  height: 25%;
 }
 .talebobbel {
   position: absolute;
