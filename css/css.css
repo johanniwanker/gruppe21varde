@@ -252,12 +252,12 @@ footer{
 .km1 {
   position:absolute;
   top: 45%;
-  left: 25%;
+  left: 30%;
 }
 .km2 {
   position: absolute;
-  top: 40%;
-  right: 0%;
+  top: 45%;
+  right: 30%;
   text-align: center;
 }
 /*Program*/
