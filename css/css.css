@@ -225,6 +225,7 @@ footer{
 .kambag {
   display: flex;
   background-image: url(../img/johan.jpg);
+  background-size: cover;
   width: 100%;
   height: 1000px;
 }
@@ -232,10 +233,32 @@ footer{
   width:113px;
 }
 .talebobbel {
-  width: 750px;
-  height: 500px;
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  left: 0;
+  background-image: url(../img/talebobbel.png);
+  background-size: contain;
 }
-
+.talebobbel2 {
+  position: absolute;
+  right:0;
+  width: 35%;
+  height: 50%;
+  background-image: url(../img/talebobbel2.png);
+  background-size: contain;
+}
+.km1 {
+  position:absolute;
+  top: 45%;
+  left: 25%;
+}
+.km2 {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  text-align: center;
+}
 /*Program*/
 
 .text-center {
@@ -258,6 +281,8 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   width: 100%;
   height: 25px;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .enavn, .email, .gæster, .ankomst, .afrejse {
@@ -265,6 +290,8 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   height: 25px;
   margin-top: 10px;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .kommentarer{
@@ -272,19 +299,67 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   margin-top: 10px;
   height: 150px;
   border-radius: 4px;
+  resize: none;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
-.kommentarer::-webkit-input-placeholder{
-
-}
-
-/*Kontakt*/
 .send {
   background-color: #010736;
   color: white;
   height: 30px;
   width: 60px;
   border: none;
+  float: right;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+/*Kontakt*/
+.ksend {
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.kontaktknap{
+  margin-top: 50px;
+}
+
+.kontakth4{
+  text-align: center;
+}
+
+.vsend, .fsend, .psend{
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  margin: 0 20px 40px 20px;
+}
+
+@media screen and (max-width: 1366px) {
+  .km1 {
+    position:absolute;
+    top: 41%;
+    left: 24%;
+  }
+  .km2 {
+    position: absolute;
+    top: 41%;
+    right: 24%;
+    text-align: center;
+  }
+.kambag {
+  height: 700px;
+}
 }
 
 /*Modal*/

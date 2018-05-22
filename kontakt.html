@@ -21,8 +21,8 @@
                     <li><h4><a class="menu" href="program.html">Program</a></h4></li>
                     <li><a href="index.html"><img class="logo" src="img/logogul.png"></a></li>
                     <li><h4><a class="menu" href="praktisk.html">Praktisk</a></h4></li>
-                    <li><h4><a class="menu current" href="booking.html">Booking</a></h4></li>
-                    <li><h4><a class="menu" href="kontakt.html">Kontakt</a></h4></li>
+                    <li><h4><a class="menu" href="booking.html">Booking</a></h4></li>
+                    <li><h4><a class="menu current" href="kontakt.html">Kontakt</a></h4></li>
                 </ul>
             </div>
         </header>
@@ -36,9 +36,9 @@
                     <form>
                       <input class="fnavn margin-t-10" type="text" name="fname" placeholder="Navn">
                       <input class="email" type="email" name="mail" placeholder="E-mail">
-                      <input class="kommentarer" type="text" name="kommentar" placeholder="Hvad kan vi hjælpe med?">
+                      <textarea  placeholder="Hvad kan vi hjælpe med?" class="kommentarer" name="kommentar"></textarea>
                     </form>
-                    <button class="send margin-t-10" type="button">Send</button>
+                    <button class="ksend margin-t-10" type="button">Send</button>
                   </div>
                     <div class="column"><h5>Hvis du mangler noget mere uddybende, så skriv eller ring endelig på følgende:</h5>
                       <h5 class="margin-t-20">Tlf:</h5>
@@ -49,7 +49,18 @@
                       <h5>Vardevej 1, Varde 6800</h5>
                     </div>
                 </div>
+                <div class="kontaktknap">
+                  <h4 class="bold kontakth4">Er du fra en..?</h4>
+                  <div class="flex-container  margin-t-20">
+                    <button class="vsend" type="button" onclick="location.href='til-virksomheder.html'">Virksomhed</button>
+                    <button class="fsend" type="button" onclick="location.href='til-foreninger.html'">Forening</button>
+                    <button class="psend" type="button" onclick="location.href='presse.html'">Pressen</button>                  
+                  </div>
+
+
+                </div>
             </div>
+
         </section>
 
         <footer class="bg-blue">
