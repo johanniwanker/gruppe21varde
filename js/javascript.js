@@ -18,6 +18,7 @@ window.onclick = function(event) {
 
 
 /*Kortet*/
+
 //Laver global variable
 var map;
 //Laver funktion
