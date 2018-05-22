@@ -29,11 +29,13 @@ h1{
     font-size: 30px;
     font-weight: bold;
     font-family: Raleway;
+    text-align: center;
 }
 h2{
     font-size: 26px;
     font-weight: bold;
     font-family: Roboto;
+    text-align: center;
 }
 h3{
     font-size: 22px;
@@ -387,7 +389,13 @@ cursor: pointer;
     cursor: pointer;
 }
 
-#mapDiv { width: 350px; height: 300px; }
+/*Kortet*/
+#mapDiv { width: 100%; height: 50%; }
+
+/*Index*/
+.indexoverskrift{
+  padding: 50px 0 0 0;
+}
 
 
 @media screen and (max-width: 1366px) {
