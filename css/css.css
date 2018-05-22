@@ -344,24 +344,6 @@ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
   font-family: Roboto;
   margin: 0 20px 40px 20px;
 }
-
-@media screen and (max-width: 1366px) {
-  .km1 {
-    position:absolute;
-    top: 41%;
-    left: 24%;
-  }
-  .km2 {
-    position: absolute;
-    top: 41%;
-    right: 24%;
-    text-align: center;
-  }
-.kambag {
-  height: 700px;
-}
-}
-
 /*Modal*/
 .modal {
 display: none;
@@ -379,4 +361,22 @@ background-color: white;
 padding:10px;
 margin: auto;
 width: 80%;
+}
+
+
+@media screen and (max-width: 1366px) {
+  .km1 {
+    position:absolute;
+    top: 41%;
+    left: 24%;
+  }
+  .km2 {
+    position: absolute;
+    top: 41%;
+    right: 24%;
+    text-align: center;
+  }
+.kambag {
+  height: 700px;
+}
 }
