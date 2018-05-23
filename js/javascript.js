@@ -1,3 +1,36 @@
+function setLocal(localName) {
+  var navn = localName;
+  localStorage.setItem("name", navn);
+
+  var email = localName;
+  localStorage.setItem("mail", email);
+}
+
+function gemNavn(name) {
+  var newName = name;
+  setLocal(newName);
+}
+
+function gemData(mail) {
+  var newMail = mail;
+  setLocal(newMail);
+}
+
+
+function setData(event) {
+  var name = document.querySelector('#navn');
+  gemNavn(name.value);
+  var mail = document.querySelector('#email');
+  gemData(mail.value);
+  }
+
+  var sendData = document.querySelector("#setdata");
+  sendData.addEventListener("click", setData);
+
+
+
+
+
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
 var modalbackground2 = document.querySelector(".modalbackground2");
@@ -146,7 +179,9 @@ lukModal5.addEventListener("click", function(event){
 /*Booking*/
 
 
-function store(){
+
+
+/*function store(){
     var inputEmail= document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
   };
