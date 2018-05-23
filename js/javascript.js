@@ -79,7 +79,7 @@ close3.addEventListener("click", function(event){
     modalbackground3.style.display = "none";
 })};
 
-document.onclick = function(event) {
+window.onclick = function(event) {
     if (event.target == modalbackground) {
         modalbackground.style.display = "none";
     }
@@ -90,6 +90,9 @@ document.onclick = function(event) {
         modalbackground3.style.display = "none";
     }
 };
+
+
+
 
 
 /* Program */
