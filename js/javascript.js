@@ -23,8 +23,9 @@ function setData(event) {
   gemMail(mail.value);
 }
 
+
+
   var sendData = document.querySelector("#setdata");
-  sendData.addEventListener("click", setData);
 
 
   if(sendData){
@@ -47,16 +48,21 @@ var close = document.querySelector(".close");
 var close2 = document.querySelector(".close2");
 var close3 = document.querySelector(".close3");
 
+if(modalbackground){
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
-});
+})};
+
+if(modalbackground2){
 talebobbelbutton2.addEventListener("click", function(event){
   modalbackground2.style.display = "block";
-});
+})};
+
+if(modalbackground2, modalbackground3){
 ledesend.addEventListener("click", function(event){
   modalbackground2.style.display = "none";
   modalbackground3.style.display = "block";
-});
+})};
 
 if(modalbackground){
 close.addEventListener("click", function(event){
@@ -111,9 +117,11 @@ for(var i=0;i<visModalSigurd.length;i++){
 visModalSigurd[i].addEventListener("click", function(event){
     modal1.style.display = "block";
 })};
+
+if(modal1){
 lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
-});
+})};
 
 document.onclick = function(event) {
     if (event.target == modal1) {
@@ -138,9 +146,11 @@ for(var i=0;i<visModalMikkel.length;i++){
 visModalMikkel[i].addEventListener("click", function(event){
     modal2.style.display = "block";
 })};
+
+if(modal2){
 lukModal2.addEventListener("click", function(event){
     modal2.style.display = "none";
-});
+})};
 
 
 
@@ -148,28 +158,31 @@ for(var i=0;i<visModalSmed.length;i++){
 visModalSmed[i].addEventListener("click", function(event){
     modal3.style.display = "block";
 })};
+if(modal3){
 lukModal3.addEventListener("click", function(event){
     modal3.style.display = "none";
-});
+})};
 
 
 for(var i=0;i<visModalHonning.length;i++){
 visModalHonning[i].addEventListener("click", function(event){
     modal4.style.display = "block";
 })};
-
+if(modal4){
 lukModal4.addEventListener("click", function(event){
     modal4.style.display = "none";
-});
+})};
 
 
 for(var i=0;i<visModalGarn.length;i++){
 visModalGarn[i].addEventListener("click", function(event){
     modal5.style.display = "block";
 })};
+if(modal5){
+
 lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
-});
+})};
 
 /*Booking*/
 
