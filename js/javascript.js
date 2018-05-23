@@ -27,7 +27,7 @@ function setData(event) {
   sendData.addEventListener("click", setData, function(event){
       sendData.style.display = "block";
   })};
-  
+
 
 
 
@@ -76,7 +76,9 @@ var husk = document.querySelector("#husk");
 
 
 var ledeSend = document.querySelector(".ledesend");
-ledeSend.addEventListener("click", tjekInput);
+if (ledeSend){
+    ledeSend.addEventListener("click", tjekInput);
+}
 
 if(modalbackground){
 close.addEventListener("click", function(event){
