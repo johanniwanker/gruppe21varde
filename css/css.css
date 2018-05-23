@@ -171,6 +171,8 @@ a:hover{
     margin-top: 20px;
 }
 
+
+
 /* Padding */
 .padbot {
   padding-bottom: 50px;
@@ -236,6 +238,40 @@ footer{
 .imgpadbot {
   padding-bottom: 10px;
 }
+
+.imgindex {
+width: 100%;
+height:auto;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/johan-baggrund.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+width: auto;
+margin-top: 30px;
+  background-position: right;
+  padding-left: 40px;
+  padding-top: 90px;
+}
+
+.klistermaerke {
+  height: auto;
+  width: 9%;
+  background-color: #010736;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.klister-margin2{
+margin-left: 4%;
+margin-top: 4%;
+
+
+}
+
 /* Presse */
 
 
