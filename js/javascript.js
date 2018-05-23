@@ -1,14 +1,89 @@
+function setLocal(localName) {
+  var navn = localName;
+  localStorage.setItem("name", navn);
+  var email = localName;
+  localStorage.setItem("mail", email);
+}
+
+function gemData(name, mail) {
+  var newName = name;
+  setLocal(newName);
+  var newMail = mail;
+  setLocal(newMail);
+}
+
+
+function setData(event) {
+  var name = document.querySelector('#navn');
+  gemName(name.value);
+}
+
+function setData(event) {
+  var mail = document.querySelector('#email');
+  gemMail(mail.value);
+}
+
+  var sendData = document.querySelector("#setdata");
+  sendData.addEventListener("click", setData);
+
+
+  if(sendData){
+  sendData.addEventListener("click", function(event){
+      sendData.style.display = "none";
+  })};
+
+
+
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
+var modalbackground2 = document.querySelector(".modalbackground2");
+var modalbackground3 = document.querySelector(".modalbackground3");
 
 var talebobbelbutton = document.querySelector(".talebobbelbutton");
+var talebobbelbutton2 = document.querySelector(".talebobbelbutton2");
+var ledesend = document.querySelector(".ledesend");
 
 var close = document.querySelector(".close");
+var close2 = document.querySelector(".close2");
+var close3 = document.querySelector(".close3");
 
-if(modalbackground){
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
+});
+talebobbelbutton2.addEventListener("click", function(event){
+  modalbackground2.style.display = "block";
+});
+ledesend.addEventListener("click", function(event){
+  modalbackground2.style.display = "none";
+  modalbackground3.style.display = "block";
+});
+
+if(modalbackground){
+close.addEventListener("click", function(event){
+    modalbackground.style.display = "none";
 })};
+
+if(modalbackground2){
+close2.addEventListener("click", function(event){
+    modalbackground2.style.display = "none";
+})};
+
+if(modalbackground3){
+close3.addEventListener("click", function(event){
+    modalbackground3.style.display = "none";
+})};
+
+document.onclick = function(event) {
+    if (event.target == modalbackground) {
+        modalbackground.style.display = "none";
+    }
+    else if (event.target == modalbackground2) {
+        modalbackground2.style.display = "none";
+    }
+    else if (event.target == modalbackground3) {
+        modalbackground3.style.display = "none";
+    }
+};
 
 
 /* Program */
@@ -31,18 +106,15 @@ var lukModal3 = document.querySelector(".luk3");
 var lukModal4 = document.querySelector(".luk4");
 var lukModal5 = document.querySelector(".luk5");
 
-/* for-statement for modal, viser modal ved click*/
+
 for(var i=0;i<visModalSigurd.length;i++){
 visModalSigurd[i].addEventListener("click", function(event){
     modal1.style.display = "block";
 })};
-
-if(modal1){
 lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
-})};
+});
 
-/* if-else-if-statements for at clicke udenfor modalerne */
 document.onclick = function(event) {
     if (event.target == modal1) {
         modal1.style.display = "none";
@@ -66,11 +138,9 @@ for(var i=0;i<visModalMikkel.length;i++){
 visModalMikkel[i].addEventListener("click", function(event){
     modal2.style.display = "block";
 })};
-
-if(modal2){
 lukModal2.addEventListener("click", function(event){
     modal2.style.display = "none";
-})};
+});
 
 
 
@@ -78,10 +148,9 @@ for(var i=0;i<visModalSmed.length;i++){
 visModalSmed[i].addEventListener("click", function(event){
     modal3.style.display = "block";
 })};
-if(modal3){
 lukModal3.addEventListener("click", function(event){
     modal3.style.display = "none";
-})};
+});
 
 
 for(var i=0;i<visModalHonning.length;i++){
@@ -89,25 +158,25 @@ visModalHonning[i].addEventListener("click", function(event){
     modal4.style.display = "block";
 })};
 
-if(modal4){
 lukModal4.addEventListener("click", function(event){
     modal4.style.display = "none";
-})};
+});
 
 
 for(var i=0;i<visModalGarn.length;i++){
 visModalGarn[i].addEventListener("click", function(event){
     modal5.style.display = "block";
 })};
-if(modal5){
 lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
-})};
+});
 
 /*Booking*/
 
 
-function store(){
+
+
+/*function store(){
     var inputEmail= document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
   };
