@@ -1,3 +1,17 @@
+/* Kampagne */
+var modalbackground = document.querySelector(".modalbackground");
+
+var talebobbelbutton = document.querySelector(".talebobbelbutton");
+
+var close = document.querySelector(".close");
+
+talebobbelbutton.addEventListener("click", function(event){
+  modalbackground.style.display = "block";
+});
+
+
+/* Program */
+
 var modal1 = document.querySelector(".modal1");
 var modal2 = document.querySelector(".modal2");
 var modal3 = document.querySelector(".modal3");

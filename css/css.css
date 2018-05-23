@@ -188,6 +188,7 @@ padding: 3%;
 padding-left: 10px;
 }
 
+}
 /* Header */
 header{
     height: 101px;
@@ -259,6 +260,9 @@ footer{
   background-image: url(../img/talebobbel2.png);
   background-size: contain;
 }
+.talebobbel:hover, .talebobbel2:hover{
+  cursor: pointer;
+}
 .km1 {
   position:absolute;
   top: 45%;
@@ -270,6 +274,43 @@ footer{
   right: 30%;
   text-align: center;
 }
+.modaltalebobbel1 {
+  background-color: #ffffff;
+  padding: 5%;
+  width: 50%;
+}
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  padding: 5%;
+  width: 50%;
+ }
+.ledesend {
+  background-color: #010736;
+  color: white;
+  height: 50px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  cursor:pointer;
+}
+
+.modalbackground {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+
 /*Program*/
 
 .text-center {
