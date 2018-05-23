@@ -15,12 +15,12 @@ function gemData(name, mail) {
 
 function setData(event) {
   var name = document.querySelector('#navn');
-  gemName(name.value);
+  gemData(name.value);
 }
 
 function setData(event) {
   var mail = document.querySelector('#email');
-  gemMail(mail.value);
+  gemData(mail.value);
 }
 
   var sendData = document.querySelector("#setdata");
