@@ -1,17 +1,13 @@
 function setLocal(localName) {
   var navn = localName;
   localStorage.setItem("name", navn);
-
   var email = localName;
   localStorage.setItem("mail", email);
 }
 
-function gemNavn(name) {
+function gemData(name, mail) {
   var newName = name;
   setLocal(newName);
-}
-
-function gemData(mail) {
   var newMail = mail;
   setLocal(newMail);
 }
@@ -19,15 +15,20 @@ function gemData(mail) {
 
 function setData(event) {
   var name = document.querySelector('#navn');
-  gemNavn(name.value);
+  gemName(name.value);
+}
+function setData(event) {
   var mail = document.querySelector('#email');
-  gemData(mail.value);
-  }
+  gemMail(mail.value);
+}
 
-  var sendData = document.querySelector("#setdata");
-  sendData.addEventListener("click", setData);
+  var sendName = document.querySelector("#setdata");
+  sendName.addEventListener("click", setData);
 
 
+if (sendData) {
+  
+}
 
 
 
@@ -38,20 +39,10 @@ var talebobbelbutton = document.querySelector(".talebobbelbutton");
 
 var close = document.querySelector(".close");
 
-if(modalbackground){
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
-})};
-
-var modalbackground2 = document.querySelector(".modalbackground2");
-
-var talebobbelbutton2 = document.querySelector(".talebobbelbutton2");
-
-var close2 = document.querySelector(".close2");
-
-talebobbelbutton2.addEventListener("click", function(event){
-  modalbackground2.style.display = "block";
 });
+
 
 /* Program */
 
@@ -73,18 +64,15 @@ var lukModal3 = document.querySelector(".luk3");
 var lukModal4 = document.querySelector(".luk4");
 var lukModal5 = document.querySelector(".luk5");
 
-/* for-statement for modal, viser modal ved click*/
+
 for(var i=0;i<visModalSigurd.length;i++){
 visModalSigurd[i].addEventListener("click", function(event){
     modal1.style.display = "block";
 })};
-
-if(modal1){
 lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
-})};
+});
 
-/* if-else-if-statements for at clicke udenfor modalerne */
 document.onclick = function(event) {
     if (event.target == modal1) {
         modal1.style.display = "none";
@@ -108,11 +96,9 @@ for(var i=0;i<visModalMikkel.length;i++){
 visModalMikkel[i].addEventListener("click", function(event){
     modal2.style.display = "block";
 })};
-
-if(modal2){
 lukModal2.addEventListener("click", function(event){
     modal2.style.display = "none";
-})};
+});
 
 
 
@@ -120,10 +106,9 @@ for(var i=0;i<visModalSmed.length;i++){
 visModalSmed[i].addEventListener("click", function(event){
     modal3.style.display = "block";
 })};
-if(modal3){
 lukModal3.addEventListener("click", function(event){
     modal3.style.display = "none";
-})};
+});
 
 
 for(var i=0;i<visModalHonning.length;i++){
@@ -131,20 +116,18 @@ visModalHonning[i].addEventListener("click", function(event){
     modal4.style.display = "block";
 })};
 
-if(modal4){
 lukModal4.addEventListener("click", function(event){
     modal4.style.display = "none";
-})};
+});
 
 
 for(var i=0;i<visModalGarn.length;i++){
 visModalGarn[i].addEventListener("click", function(event){
     modal5.style.display = "block";
 })};
-if(modal5){
 lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
-})};
+});
 
 /*Booking*/
 
