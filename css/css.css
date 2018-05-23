@@ -544,12 +544,11 @@ cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 1% 2% 4% 2%;
+    padding: 4% 2% 4% 2%;
     width: 50%;
 }
 .modaltalebobbel2 {
@@ -558,8 +557,7 @@ cursor: pointer;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height: 40%;
-  padding: 1% 2% 4% 2%;
+  padding: 1% 2% 11% 2%;
   width: 50%;
  }
  .modaltalebobbel3 {
