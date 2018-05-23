@@ -29,7 +29,7 @@ function setData(event) {
   })};
 
 
-if (name) {
+/*if (name) {
 
 }
 
