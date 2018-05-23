@@ -257,7 +257,7 @@ height:auto;
   margin-top: 40px;
   background-position: right;
   padding-left: 40px;
-  padding-top: 90px;
+  padding-top: 10%;
   height: 600px;
 }
 
@@ -290,6 +290,7 @@ margin-left: -15%;
 padding-top: 25%;
 color: #fff;
 transform: rotate(-15deg);
+font-size: 120%;
 }
 
 .klister-tekst3{
@@ -297,6 +298,7 @@ margin-left: 0%;
 padding-top: 0%;
 color: #fff;
 transform: rotate(-15deg);
+font-size: 120%;
 }
 
 .klister-margin{
