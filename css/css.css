@@ -248,12 +248,13 @@ height:auto;
   display: flex;
   flex-direction: column;
   background-image: url("../img/johan-baggrund.png");
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 40px;
   background-position: right;
   padding-left: 40px;
   padding-top: 90px;
+  height: 600px;
 }
 
 .klistermaerke {
@@ -261,13 +262,20 @@ height:auto;
   height:0;
   padding-bottom: 25%;
   border-radius: 50%;
-  background: #4679BD;
+  background: #010736;
+  position: relative;
+}
+
+.klister-tekst{
+padding-left: 5%;
+padding-top: 35%;
+color: #fff;
+
 }
 
 .klister-margin2{
 margin-left: 4%;
 margin-top: 4%;
-
 
 }
 
