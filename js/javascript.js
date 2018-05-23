@@ -28,6 +28,7 @@ function setData(event) {
       sendData.style.display = "block";
   })};
 
+
 if (name.) {
 
 }
@@ -56,11 +57,31 @@ talebobbelbutton2.addEventListener("click", function(event){
   modalbackground2.style.display = "block";
 })};
 
-if(modalbackground2, modalbackground3){
-ledesend.addEventListener("click", function(event){
-  modalbackground2.style.display = "none";
-  modalbackground3.style.display = "block";
-})};
+function tjekInput(event) {
+    var ledeNavn = document.querySelector("#lede-navn");
+    var ledeMail = document.querySelector("#lede-mail");
+    var ledeTraad = document.querySelector("#ledetraad");
+
+    var navnTest = ledeNavn.value;
+    var mailTest = ledeMail.value;
+    var traadTest = ledeTraad.value;
+
+    if(navnTest != '' && mailTest != '' && traadTest != ''){
+          modalbackground2.style.display = "none";
+          modalbackground3.style.display = "block";
+          husk.style.display = "none";
+          document.getElementById("ledetraad").value = "";
+}else{
+    husk.style.display = "block";
+}
+}
+var husk = document.querySelector("#husk");
+
+
+var ledeSend = document.querySelector(".ledesend");
+if (ledeSend){
+    ledeSend.addEventListener("click", tjekInput);
+}
 
 if(modalbackground){
 close.addEventListener("click", function(event){
@@ -88,10 +109,6 @@ window.onclick = function(event) {
         modalbackground3.style.display = "none";
     }
 };
-
-
-
-
 
 /* Program */
 
