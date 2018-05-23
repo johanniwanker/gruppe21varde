@@ -1,23 +1,17 @@
 
 function setLocal(localName) {
-  var navn = localName;
-  localStorage.setItem("name", navn);
   var email = localName;
   localStorage.setItem("mail", email);
 }
 
-function gemData(name, mail) {
-  var newName = name;
-  setLocal(newName);
+function gemData(mail) {
   var newMail = mail;
   setLocal(newMail);
 }
 
-
 function setData(event) {
-  var name = document.querySelector('#navn');
   var mail = document.querySelector('#email');
-  gemData(name.value, mail.value);
+  gemData(mail.value);
 }
 
   var sendData = document.querySelector("#setdata");
@@ -29,9 +23,23 @@ function setData(event) {
   })};
 
 
-/*if (name) {
 
+  function tjekInput(event) {
+      var ledeEmail = document.querySelector("#email");
+      var emailTest = ledeEmail.value;
+      if(emailTest != ''){
+            modalbackground2.style.display = "none";
+            modalbackground3.style.display = "block";
+            husk.style.display = "none";
+            document.getElementById("ledetraad").value = "";
+  }else{
+      husk.style.display = "block";
+  }
 }
+
+  var husk = document.querySelector("#husk");
+
+
 
 
 /* Kampagne */
