@@ -17,7 +17,7 @@ function gemData(name, mail) {
 function setData(event) {
   var name = document.querySelector('#navn');
   var mail = document.querySelector('#email');
-  gemData(mail.value, name.value);
+  gemData(name.value, mail.value);
 }
 
   var sendData = document.querySelector("#setdata");
@@ -29,6 +29,9 @@ function setData(event) {
   })};
 
 
+/*if (name) {
+
+}
 
 
 /* Kampagne */
