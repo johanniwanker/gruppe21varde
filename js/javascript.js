@@ -1,3 +1,4 @@
+
 function setLocal(localName) {
   var navn = localName;
   localStorage.setItem("name", navn);
@@ -15,23 +16,18 @@ function gemData(name, mail) {
 
 function setData(event) {
   var name = document.querySelector('#navn');
-  gemData(name.value);
-}
-
-function setData(event) {
   var mail = document.querySelector('#email');
-  gemData(mail.value);
+  gemData(mail.value, name.value);
 }
-
-
 
   var sendData = document.querySelector("#setdata");
 
 
   if(sendData){
-  sendData.addEventListener("click", function(event){
-      sendData.style.display = "none";
+  sendData.addEventListener("click", setData, function(event){
+      sendData.style.display = "block";
   })};
+  
 
 
 
@@ -377,7 +373,7 @@ function initMap() {
   map.setMapTypeId('new_varde_style');
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.620111, lng: 8.479482},
     map: map,
     title: 'Toilet ved Rådhuset',
@@ -385,7 +381,7 @@ function initMap() {
   });
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.619471, lng: 8.479967},
     map: map,
     title: 'Toilet ved bibliotek',
@@ -393,7 +389,7 @@ function initMap() {
   });
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.621625, lng: 8.480162},
     map: map,
     title: 'Toilet ved bibliotek',
