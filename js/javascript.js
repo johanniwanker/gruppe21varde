@@ -81,6 +81,16 @@ lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
 });
 
+/*Booking*/
+
+
+function store(){
+    var inputEmail= document.getElementById("email");
+    localStorage.setItem("email", inputEmail.value);
+  };
+
+
+
 
 /*Kortet*/
 
@@ -241,7 +251,7 @@ function initMap() {
     name: ""
   });
 
-  //Sarter startpunkt for kortet
+  //Sætter startoptions for kortet
   var mapOptions = {
     center: new google.maps.LatLng(55.619487, 8.479085),
     zoom: 15,
