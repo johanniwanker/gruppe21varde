@@ -17,18 +17,20 @@ function setData(event) {
   var name = document.querySelector('#navn');
   gemName(name.value);
 }
+
 function setData(event) {
   var mail = document.querySelector('#email');
   gemMail(mail.value);
 }
 
-  var sendName = document.querySelector("#setdata");
-  sendName.addEventListener("click", setData);
+  var sendData = document.querySelector("#setdata");
+  sendData.addEventListener("click", setData);
 
 
-if (sendData) {
-  
-}
+  if(sendData){
+  sendData.addEventListener("click", function(event){
+      sendData.style.display = "none";
+  })};
 
 
 
@@ -47,10 +49,7 @@ var close3 = document.querySelector(".close3");
 
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
-<<<<<<< HEAD
 });
-=======
-})};
 talebobbelbutton2.addEventListener("click", function(event){
   modalbackground2.style.display = "block";
 });
@@ -85,7 +84,6 @@ document.onclick = function(event) {
         modalbackground3.style.display = "none";
     }
 };
->>>>>>> b6be7390eb41315cf2bd94ed339d4cde30d5dd57
 
 
 /* Program */
