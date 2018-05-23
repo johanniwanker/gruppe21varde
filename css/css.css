@@ -24,6 +24,9 @@ section{
     width: 49%;
 }
 
+.column60 {
+  width: 80%;
+}
 /* Fonts */
 h1{
     font-size: 30px;
@@ -145,6 +148,7 @@ a:hover{
     align-items: center;
 }
 .flex-2 {
+    display: flex;
     flex: 2;
 }
 /* Margin */
@@ -167,6 +171,8 @@ a:hover{
     margin-top: 20px;
 }
 
+
+
 /* Padding */
 .padbot {
   padding-bottom: 50px;
@@ -186,6 +192,10 @@ padding: 3%;
 
 .padding-left {
 padding-left: 10px;
+}
+
+.padright {
+  20%;
 }
 
 /* Header */
@@ -225,6 +235,50 @@ footer{
 .imgpadleft {
     padding-left: 10px;
   }
+.imgpadbot {
+  padding-bottom: 10px;
+}
+
+.imgindex {
+width: 100%;
+height:auto;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/johan-baggrund.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  background-position: right;
+  padding-left: 40px;
+  padding-top: 90px;
+  height: 600px;
+}
+
+.klistermaerke {
+  width: 25%;
+  height:0;
+  padding-bottom: 25%;
+  border-radius: 50%;
+  background: #010736;
+  position: relative;
+}
+
+.klister-tekst{
+padding-left: 5%;
+padding-top: 35%;
+color: #fff;
+
+}
+
+.klister-margin2{
+margin-left: 4%;
+margin-top: 4%;
+
+}
+
 /* Presse */
 
 
@@ -247,6 +301,7 @@ footer{
   left: 0;
   background-image: url(../img/talebobbel.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .talebobbel2 {
   position: absolute;
@@ -255,6 +310,10 @@ footer{
   height: 50%;
   background-image: url(../img/talebobbel2.png);
   background-size: contain;
+  background-repeat: no-repeat;
+}
+.talebobbel:hover, .talebobbel2:hover, .ledesend:hover{
+  cursor: pointer;
 }
 .km1 {
   position:absolute;
@@ -267,6 +326,73 @@ footer{
   right: 30%;
   text-align: center;
 }
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1% 2% 4% 2%;
+    width: 50%;
+}
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 30%;
+  padding: 1% 2% 4% 2%;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height:3%;
+   padding: 1% 2% 3% 2%;
+   width: 25%;
+  }
+.ledesend {
+  background-color: #010736;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  float: right;
+}
+.close, .close2, .close3 {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close2:hover, .close3:hover {
+  cursor:pointer;
+}
+
+.modalbackground, .modalbackground2, .modalbackground3 {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+#husk{
+    display: none;
+}
+
 /*Program*/
 
 .text-center {
@@ -280,6 +406,7 @@ width: 25%;
 }
 .width-33 {
 width: 33%;
+height: 100%;
 }
 .kalender-box{
 flex-direction: column;
@@ -296,7 +423,6 @@ cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
   font-family: Roboto;
-  padding-left: 5px;
 }
 
 .enavn, .email, .gæster, .ankomst, .afrejse {
@@ -306,7 +432,6 @@ cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
   font-family: Roboto;
-  padding-left: 5px;
 }
 
 .kommentarer{
@@ -317,7 +442,6 @@ cursor: pointer;
   resize: none;
   font-size: 16px;
   font-family: Roboto;
-  padding-left: 5px;
 }
 
 .send {
@@ -398,12 +522,16 @@ cursor: pointer;
 }
 
 .indexoverskrift{
-  padding: 50px 0 0 0;
+  padding: 10px 0 0 0;
 }
 
 #mapDiv{
   width: 100%;
-  height: 50%;
+  height: 350px;
+}
+
+.fb-page, .fb-page iframe[style], .fb-page span {
+    width: 100% !important;
 }
 
 @media screen and (max-width: 1366px) {
@@ -421,4 +549,40 @@ cursor: pointer;
 .kambag {
   height: 700px;
 }
+
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 4% 2% 4% 2%;
+    width: 50%;
 }
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1% 2% 11% 2%;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height:8%;
+   padding: 1% 2% 3% 2%;
+   width: 25%;
+  }
+
+  .close:hover, .close2:hover, .close3:hover {
+    cursor:pointer;
+  }
