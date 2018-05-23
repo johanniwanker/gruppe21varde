@@ -5,9 +5,10 @@ var talebobbelbutton = document.querySelector(".talebobbelbutton");
 
 var close = document.querySelector(".close");
 
+if(modalbackground){
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
-});
+})};
 
 
 /* Program */
@@ -36,9 +37,10 @@ visModalSigurd[i].addEventListener("click", function(event){
     modal1.style.display = "block";
 })};
 
+if(modal1){
 lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
-});
+})};
 
 /* if-else-if-statements for at clicke udenfor modalerne */
 document.onclick = function(event) {
@@ -64,9 +66,11 @@ for(var i=0;i<visModalMikkel.length;i++){
 visModalMikkel[i].addEventListener("click", function(event){
     modal2.style.display = "block";
 })};
+
+if(modal2){
 lukModal2.addEventListener("click", function(event){
     modal2.style.display = "none";
-});
+})};
 
 
 
@@ -74,9 +78,10 @@ for(var i=0;i<visModalSmed.length;i++){
 visModalSmed[i].addEventListener("click", function(event){
     modal3.style.display = "block";
 })};
+if(modal3){
 lukModal3.addEventListener("click", function(event){
     modal3.style.display = "none";
-});
+})};
 
 
 for(var i=0;i<visModalHonning.length;i++){
@@ -84,18 +89,20 @@ visModalHonning[i].addEventListener("click", function(event){
     modal4.style.display = "block";
 })};
 
+if(modal4){
 lukModal4.addEventListener("click", function(event){
     modal4.style.display = "none";
-});
+})};
 
 
 for(var i=0;i<visModalGarn.length;i++){
 visModalGarn[i].addEventListener("click", function(event){
     modal5.style.display = "block";
 })};
+if(modal5){
 lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
-});
+})};
 
 /*Booking*/
 
