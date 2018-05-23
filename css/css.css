@@ -536,4 +536,40 @@ cursor: pointer;
 .kambag {
   height: 700px;
 }
+
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 4% 2% 4% 2%;
+    width: 50%;
 }
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1% 2% 11% 2%;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height:8%;
+   padding: 1% 2% 3% 2%;
+   width: 25%;
+  }
+
+  .close:hover, .close2:hover, .close3:hover {
+    cursor:pointer;
+  }
