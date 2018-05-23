@@ -34,14 +34,58 @@ if (sendData) {
 
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
+var modalbackground2 = document.querySelector(".modalbackground2");
+var modalbackground3 = document.querySelector(".modalbackground3");
 
 var talebobbelbutton = document.querySelector(".talebobbelbutton");
+var talebobbelbutton2 = document.querySelector(".talebobbelbutton2");
+var ledesend = document.querySelector(".ledesend");
 
 var close = document.querySelector(".close");
+var close2 = document.querySelector(".close2");
+var close3 = document.querySelector(".close3");
 
 talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
+<<<<<<< HEAD
 });
+=======
+})};
+talebobbelbutton2.addEventListener("click", function(event){
+  modalbackground2.style.display = "block";
+});
+ledesend.addEventListener("click", function(event){
+  modalbackground2.style.display = "none";
+  modalbackground3.style.display = "block";
+});
+
+if(modalbackground){
+close.addEventListener("click", function(event){
+    modalbackground.style.display = "none";
+})};
+
+if(modalbackground2){
+close2.addEventListener("click", function(event){
+    modalbackground2.style.display = "none";
+})};
+
+if(modalbackground3){
+close3.addEventListener("click", function(event){
+    modalbackground3.style.display = "none";
+})};
+
+document.onclick = function(event) {
+    if (event.target == modalbackground) {
+        modalbackground.style.display = "none";
+    }
+    else if (event.target == modalbackground2) {
+        modalbackground2.style.display = "none";
+    }
+    else if (event.target == modalbackground3) {
+        modalbackground3.style.display = "none";
+    }
+};
+>>>>>>> b6be7390eb41315cf2bd94ed339d4cde30d5dd57
 
 
 /* Program */
