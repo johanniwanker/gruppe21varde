@@ -301,6 +301,7 @@ margin-top: 4%;
   left: 0;
   background-image: url(../img/talebobbel.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .talebobbel2 {
   position: absolute;
@@ -309,6 +310,7 @@ margin-top: 4%;
   height: 50%;
   background-image: url(../img/talebobbel2.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .talebobbel:hover, .talebobbel2:hover, .ledesend:hover{
   cursor: pointer;
@@ -386,6 +388,9 @@ margin-top: 4%;
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
+}
+#husk{
+    display: none;
 }
 
 /*Program*/

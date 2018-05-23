@@ -1,3 +1,4 @@
+
 function setLocal(localName) {
   var navn = localName;
   localStorage.setItem("name", navn);
@@ -15,23 +16,18 @@ function gemData(name, mail) {
 
 function setData(event) {
   var name = document.querySelector('#navn');
-  gemData(name.value);
-}
-
-function setData(event) {
   var mail = document.querySelector('#email');
-  gemData(mail.value);
+  gemData(mail.value, name.value);
 }
-
-
 
   var sendData = document.querySelector("#setdata");
 
 
   if(sendData){
-  sendData.addEventListener("click", function(event){
-      sendData.style.display = "none";
+  sendData.addEventListener("click", setData, function(event){
+      sendData.style.display = "block";
   })};
+
 
 
 
@@ -58,11 +54,31 @@ talebobbelbutton2.addEventListener("click", function(event){
   modalbackground2.style.display = "block";
 })};
 
-if(modalbackground2, modalbackground3){
-ledesend.addEventListener("click", function(event){
-  modalbackground2.style.display = "none";
-  modalbackground3.style.display = "block";
-})};
+function tjekInput(event) {
+    var ledeNavn = document.querySelector("#lede-navn");
+    var ledeMail = document.querySelector("#lede-mail");
+    var ledeTraad = document.querySelector("#ledetraad");
+
+    var navnTest = ledeNavn.value;
+    var mailTest = ledeMail.value;
+    var traadTest = ledeTraad.value;
+
+    if(navnTest != '' && mailTest != '' && traadTest != ''){
+          modalbackground2.style.display = "none";
+          modalbackground3.style.display = "block";
+          husk.style.display = "none";
+          document.getElementById("ledetraad").value = "";
+}else{
+    husk.style.display = "block";
+}
+}
+var husk = document.querySelector("#husk");
+
+
+var ledeSend = document.querySelector(".ledesend");
+if (ledeSend){
+    ledeSend.addEventListener("click", tjekInput);
+}
 
 if(modalbackground){
 close.addEventListener("click", function(event){
@@ -90,10 +106,6 @@ window.onclick = function(event) {
         modalbackground3.style.display = "none";
     }
 };
-
-
-
-
 
 /* Program */
 
@@ -380,7 +392,7 @@ function initMap() {
   map.setMapTypeId('new_varde_style');
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.620111, lng: 8.479482},
     map: map,
     title: 'Toilet ved Rådhuset',
@@ -388,7 +400,7 @@ function initMap() {
   });
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.619471, lng: 8.479967},
     map: map,
     title: 'Toilet ved bibliotek',
@@ -396,7 +408,7 @@ function initMap() {
   });
 
   //Sætter en marker på kortet
-  var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker ({
     position: {lat: 55.621625, lng: 8.480162},
     map: map,
     title: 'Toilet ved bibliotek',
