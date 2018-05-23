@@ -1,3 +1,4 @@
+/* Variable defineres*/
 var modal1 = document.querySelector(".modal1");
 var modal2 = document.querySelector(".modal2");
 var modal3 = document.querySelector(".modal3");
@@ -16,15 +17,17 @@ var lukModal3 = document.querySelector(".luk3");
 var lukModal4 = document.querySelector(".luk4");
 var lukModal5 = document.querySelector(".luk5");
 
-
+/* for-statement for modal, viser modal ved click*/
 for(var i=0;i<visModalSigurd.length;i++){
 visModalSigurd[i].addEventListener("click", function(event){
     modal1.style.display = "block";
 })};
+
 lukModal1.addEventListener("click", function(event){
     modal1.style.display = "none";
 });
 
+/* if-else-if-statements for at clicke udenfor modalerne */
 document.onclick = function(event) {
     if (event.target == modal1) {
         modal1.style.display = "none";

@@ -13,7 +13,16 @@
         <link href="css/css.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:400,500" rel="stylesheet">
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBayMqXlcwxablKl7jJ32jh_O1McWPrQiU"></script>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </head>
     <body onload="initMap()">
         <header class="bg-blue">
@@ -35,21 +44,29 @@
         </header>
 
   <section class="content shadow bg-white">
-    <div class="margin-t-10 margin-lf-20">
-      <div class="">
+    <div class="margin-t-10 margin-lf-20 width-100">
+      <div class="flex-column">
         <h1 class="indexoverskrift">Varde Middelalderfestival</h1>
         <h2 class="margin-t-10">2019</h2>
         <h2 class="margin-t-10">29. august - 1. september</h2>
       </div>
-      <div class="flex space">
+      <div class="flex-row space margin-t-10">
         <div class="column">
           <div id="mapDiv">
           </div>
         </div>
 
         <div class="column">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKulturogFritidiVardeKommune%2F&tabs=timeline&width=350&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350"
-            height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <div class="fb-page"
+          data-href="https://www.facebook.com/KulturogFritidiVardeKommune/"
+          data-tabs="timeline"
+          data-width="500"
+          data-height="350"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="true"
+          data-show-facepile="false">
+        </div>
         </div>
       </div>
     </div>
