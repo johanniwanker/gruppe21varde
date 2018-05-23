@@ -9,6 +9,15 @@ talebobbelbutton.addEventListener("click", function(event){
   modalbackground.style.display = "block";
 });
 
+var modalbackground2 = document.querySelector(".modalbackground2");
+
+var talebobbelbutton2 = document.querySelector(".talebobbelbutton2");
+
+var close2 = document.querySelector(".close2");
+
+talebobbelbutton2.addEventListener("click", function(event){
+  modalbackground2.style.display = "block";
+});
 
 /* Program */
 
