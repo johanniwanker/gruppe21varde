@@ -73,6 +73,10 @@ p{
 .bold{
     font-weight: 500;
 }
+.let-font {
+font-weight: 300;
+
+}
 a{
     text-decoration: none;
     color: #fff;
@@ -258,27 +262,52 @@ height:auto;
 }
 
 .klistermaerke {
-  width: 25%;
+  width: 22%;
   height:0;
-  padding-bottom: 25%;
+  padding-bottom: 22%;
   border-radius: 50%;
   background: #010736;
   position: relative;
+}
+
+.klistermaerke2 {
+  width: 12%;
+  height:0;
+  padding-bottom: 12%;
+  border-radius: 50%;
+  background: #010736;
+  position: absolute;
 }
 
 .klister-tekst{
 padding-left: 5%;
 padding-top: 35%;
 color: #fff;
+}
 
+.klister-tekst2{
+margin-left: -15%;
+padding-top: 25%;
+color: #fff;
+transform: rotate(-15deg);
+}
+
+.klister-tekst3{
+margin-left: 0%;
+padding-top: 0%;
+color: #fff;
+transform: rotate(-15deg);
+}
+
+.klister-margin{
+margin-left: 4%;
+margin-top: 4%;
 }
 
 .klister-margin2{
-margin-left: 4%;
-margin-top: 4%;
-
+margin-left: 15%;
+margin-top: 8%;
 }
-
 /* Presse */
 
 
