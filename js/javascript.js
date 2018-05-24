@@ -11,7 +11,20 @@ function gemData(mail) {
 
 function setData(event) {
   var mail = document.querySelector('#email');
-  gemData(mail.value);
+
+  var mailValue = mail.value;
+
+  var tjekMail = localStorage.getItem("mail");
+
+
+  if (mailValue == tjekMail) {
+    erbooket.style.display = "block";
+    booket.style.display = "none";
+  } else {
+    booket.style.display = "block";
+    erbooket.style.display ="none";
+    gemData(mail.value);
+  }
 }
 
   var sendData = document.querySelector("#setdata");
@@ -24,18 +37,7 @@ function setData(event) {
 
 
 
-  function tjekInput(event) {
-      var ledeEmail = document.querySelector("#email");
-      var emailTest = ledeEmail.value;
-      if(emailTest != ''){
-            modalbackground2.style.display = "none";
-            modalbackground3.style.display = "block";
-            husk.style.display = "none";
-            document.getElementById("ledetraad").value = "";
-  }else{
-      husk.style.display = "block";
-  }
-}
+
 
   var husk = document.querySelector("#husk");
 

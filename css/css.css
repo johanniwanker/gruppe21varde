@@ -486,6 +486,14 @@ cursor: pointer;
   font-family: Roboto;
 }
 
+#erbooket{
+  display: none;
+}
+
+#booket {
+  display: none;
+}
+
 /*Kontakt*/
 .ksend {
   background-color: #010736;
