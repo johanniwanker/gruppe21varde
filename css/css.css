@@ -484,6 +484,7 @@ cursor: pointer;
   float: right;
   font-size: 16px;
   font-family: Roboto;
+  cursor: pointer;
 }
 
 #erbooket{
@@ -503,6 +504,7 @@ cursor: pointer;
   border: none;
   font-size: 16px;
   font-family: Roboto;
+  cursor: pointer;
 }
 
 .kontaktknap{
@@ -522,6 +524,7 @@ cursor: pointer;
   font-size: 16px;
   font-family: Roboto;
   margin: 0 20px 40px 20px;
+  cursor: pointer;
 }
 /*Modal*/
 .modal1, .modal2, .modal3, .modal4, .modal5 {
